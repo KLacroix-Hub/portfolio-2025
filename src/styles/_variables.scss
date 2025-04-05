@@ -1,0 +1,26 @@
+/* Variables */
+
+/* Couleurs light/dark */
+$color-dark: #000;
+$color-light: #FFF8E8;
+$color-primary: #674636;
+$color-secondary: #AAB396;
+
+:root {
+  --color-dark: #000;
+  --color-light: #FFF8E8;
+  --color-primary: #674636;
+  --color-secondary: #AAB396;
+  --header-height:12.7rem;
+  --negative-header-height:-12.7rem;
+  --max-width: 128rem;
+  
+  @include from('extra-wide') {
+  --max-width: 140rem;
+  }
+
+  @include from('ultra-wide') {
+    --max-width: 190rem;
+
+  }
+}

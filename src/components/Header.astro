@@ -1,0 +1,135 @@
+---
+
+---
+
+<header class="header wrapper">
+  <nav class="header-nav">
+    <ul class="menu">
+      <li><a href="#projects">projets</a></li>
+      <li><a href="#about">a propos</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <ul class="header-nav__lang">
+      <li class="active"><a href="/">fr</a></li>
+      <span>|</span>
+      <li><a href="/en">en</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style lang="scss">
+  .header {
+    padding-top: 1.2rem;
+    @include from("desktop") {
+      margin-bottom: 3rem;
+    }
+    &-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @include from("desktop") {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        @include from("desktop") {
+          width: 70%;
+        }
+
+        li {
+          position: relative;
+          flex: 1;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          transition: all 0.3s ease-in-out;
+
+          &:hover,
+          &:active,
+          &:focus {
+            padding-left: 1rem;
+            &::before {
+              height: 100%;
+            }
+            a {
+              color: var(--color-light);
+              font-weight: 600;
+              &::before {
+                background-color: var(--color-light);
+              }
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-primary);
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+          }
+          a {
+            font-family: $family-headline;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+
+            &::before {
+              content: "";
+              width: 0.5rem;
+              height: 0.5rem;
+              background-color: var(--color-primary);
+              border-radius: 5rem;
+            }
+          }
+        }
+      }
+
+      &__lang {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: var(--color-primary);
+        @include from("desktop") {
+          margin-right: 5rem;
+        }
+        span {
+          color: var(--color-light);
+        }
+        li {
+          font-family: $family-headline;
+
+          &.active {
+            a {
+              font-weight: 600;
+            }
+          }
+
+          a {
+            color: var(--color-light);
+            letter-spacing: 0px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

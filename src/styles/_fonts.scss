@@ -1,0 +1,298 @@
+// Import
+@font-face {
+font-family: 'Satoshi-Light';
+src: url('/fonts/Satoshi-Light.woff2') format('woff2'),
+        url('/fonts/Satoshi-Light.woff') format('woff'),
+        url('/fonts/Satoshi-Light.ttf') format('truetype');
+font-weight: 300;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'Satoshi-LightItalic';
+src: url('/fonts/Satoshi-LightItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-LightItalic.woff') format('woff'),
+        url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
+font-weight: 300;
+font-display: swap;
+font-style: italic;
+}
+@font-face {
+font-family: 'Satoshi-Regular';
+src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+        url('/fonts/Satoshi-Regular.woff') format('woff'),
+        url('/fonts/Satoshi-Regular.ttf') format('truetype');
+font-weight: 400;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'Satoshi-Italic';
+src: url('/fonts/Satoshi-Italic.woff2') format('woff2'),
+        url('/fonts/Satoshi-Italic.woff') format('woff'),
+        url('/fonts/Satoshi-Italic.ttf') format('truetype');
+font-weight: 400;
+font-display: swap;
+font-style: italic;
+}
+@font-face {
+font-family: 'Satoshi-Medium';
+src: url('/fonts/Satoshi-Medium.woff2') format('woff2'),
+        url('/fonts/Satoshi-Medium.woff') format('woff'),
+        url('/fonts/Satoshi-Medium.ttf') format('truetype');
+font-weight: 500;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'Satoshi-MediumItalic';
+src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-MediumItalic.woff') format('woff'),
+        url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+font-weight: 500;
+font-display: swap;
+font-style: italic;
+}
+@font-face {
+font-family: 'Satoshi-Bold';
+src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+        url('/fonts/Satoshi-Bold.woff') format('woff'),
+        url('/fonts/Satoshi-Bold.ttf') format('truetype');
+font-weight: 700;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'Satoshi-BoldItalic';
+src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-BoldItalic.woff') format('woff'),
+        url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+font-weight: 700;
+font-display: swap;
+font-style: italic;
+}
+@font-face {
+font-family: 'Satoshi-Black';
+src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
+        url('/fonts/Satoshi-Black.woff') format('woff'),
+        url('/fonts/Satoshi-Black.ttf') format('truetype');
+font-weight: 900;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'Satoshi-BlackItalic';
+src: url('/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-BlackItalic.woff') format('woff'),
+        url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+font-weight: 900;
+font-display: swap;
+font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+font-family: 'Satoshi-Variable';
+src: url('/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+        url('/fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+        url('/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+font-weight: 300 900;
+font-display: swap;
+font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+font-family: 'Satoshi-VariableItalic';
+src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-VariableItalic.woff') format('woff'),
+        url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+font-weight: 300 900;
+font-display: swap;
+font-style: italic;
+}
+@font-face {
+    font-family: 'ClashGrotesk-Extralight';
+    src: url('/fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
+         url('/fonts/ClashGrotesk-Extralight.woff') format('woff'),
+         url('/fonts/ClashGrotesk-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+font-family: 'ClashGrotesk-Light';
+src: url('/fonts/ClashGrotesk-Light.woff2') format('woff2'),
+        url('/fonts/ClashGrotesk-Light.woff') format('woff'),
+        url('/fonts/ClashGrotesk-Light.ttf') format('truetype');
+font-weight: 300;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'ClashGrotesk-Regular';
+src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+        url('/fonts/ClashGrotesk-Regular.woff') format('woff'),
+        url('/fonts/ClashGrotesk-Regular.ttf') format('truetype');
+font-weight: 400;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'ClashGrotesk-Medium';
+src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+        url('/fonts/ClashGrotesk-Medium.woff') format('woff'),
+        url('/fonts/ClashGrotesk-Medium.ttf') format('truetype');
+font-weight: 500;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'ClashGrotesk-Semibold';
+src: url('/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+        url('/fonts/ClashGrotesk-Semibold.woff') format('woff'),
+        url('/fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+font-weight: 600;
+font-display: swap;
+font-style: normal;
+}
+@font-face {
+font-family: 'ClashGrotesk-Bold';
+src: url('/fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+        url('/fonts/ClashGrotesk-Bold.woff') format('woff'),
+        url('/fonts/ClashGrotesk-Bold.ttf') format('truetype');
+font-weight: 700;
+font-display: swap;
+font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+    font-family: 'ClashGrotesk-Variable';
+    src: url('/fonts/clashgrotesk/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('/fonts/clashgrotesk/ClashGrotesk-Variable.woff') format('woff'),
+         url('/fonts/clashgrotesk/ClashGrotesk-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}  
+
+// Définitions
+$family-headline: "ClashGrotesk-Variable", sans-serif;
+$family-body: "Satoshi-Variable", sans-serif;
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,p,.p{
+    color: inherit;
+}
+
+h1,.h1{
+    font-family: $family-headline;
+    font-weight: 800;
+    font-size: 7rem;
+    margin-top: 0;
+    line-height: 1;
+    color:var(--color-primary);
+    @include from("desktop"){
+        font-size: 13.2rem;
+    }
+}
+
+h2,.h2{
+    font-family: $family-body;
+    font-weight:900;
+    font-size: 1.6rem;
+    margin-top: 0;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    @include from("desktop"){
+        font-size: 1.8rem;
+    }
+    
+}
+
+h3,.h3{
+    font-family: $family-body;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    margin-top: 0;
+    @include from("desktop"){
+        font-size: 2rem;
+    }
+}
+
+p,.p{
+    font-family: $family-body;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: inherit;
+    line-height: 1.4;
+}
+
+a{
+    font-family: $family-headline;
+    font-weight: 400;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.6rem;
+    @include from('desktop'){
+        font-size: 1.8rem;
+    }
+}
+
+.small{
+    font-family: "Satoshi-VariableItalic";
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: inherit;
+}
+
+.highlight{
+    font-family: $family-body;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.sitemap{
+    font-family: $family-headline;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.btn{
+    font-family: $family-headline;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--color-light);
+
+    @include from('desktop'){
+        font-size: 2.4rem;
+    }
+}
+
+b,strong{
+    font-weight: 700;
+}
+
+i,em{
+    font-style: italic;
+} 
