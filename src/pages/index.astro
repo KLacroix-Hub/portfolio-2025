@@ -1,5 +1,65 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+const projects = [
+  {
+    title: "Maison Lafayette",
+    description:
+      "Concevoir un site moderne, professionnel et engageant, reflétant <strong style='font-weight: 900;'>expertise et serieux</strong>, tout en restant accessible aux clients et partenaires. ",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://www.maison-lafayette.com/",
+  },
+  {
+    title: "A2F",
+    description: "Description du project 2",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://a2f-33.fr/",
+  },
+  {
+    title: "Agence buzz portfolio 2025",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://www.agencebuzz.com/",
+  },
+  {
+    title: "Hématolib",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://hematolib.com/",
+  },
+  {
+    title: "Camille Plunian Portfolio",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://www.camilleplunian.fr/",
+  },
+  {
+    title: "Ado Somnie",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "HTML | CSS | JS",
+    link: "https://www.ado-somnie.com/",
+  },
+  {
+    title: "Buzz Travel",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "Expo React Native",
+    link: "",
+  },
+  {
+    title: "Valentin Lousteaunau",
+    description: "Description du project 3",
+    image: "/image/hero.jpg",
+    technos: "Expo React Native",
+    link: "https://www.osteovalentinloustaunau.fr/    ",
+  },
+];
 ---
 
 <Layout
@@ -7,6 +67,78 @@ import Layout from "../layouts/Layout.astro";
   description="Bienvenu sur mon portfolio 2025, Kévin Lacroix"
 >
   <main>
-    <h1 class="wrapper">KELX</h1>
+    <section class="hero">
+      <h1 class="wrapper">KELX</h1>
+      <div class="hero-cover">
+        <Image src="/image/hero.jpg" alt="KELX" width={1920} height={1080} />
+      </div>
+    </section>
+    <section class="highlight wrapper">
+      <p>
+        Bienvenue sur mon portfolio ! Je suis Lacroix Kévin, développeur web
+        fullstack et designer graphique, passionné par la création d’expériences
+        digitales performantes et immersives.
+      </p>
+    </section>
+    <section class="projects wrapper">
+      <h2>Mes derniers projets</h2>
+      <ul>
+        {
+          projects.map((project) => (
+            <li key={project.title}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <div class="project-card">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={300}
+                    height={200}
+                  />
+                  <h3>{project.title}</h3>
+                  <p set:html={project.description} />
+                  <p>{project.technos}</p>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
   </main>
 </Layout>
+
+<style lang="scss">
+  .hero {
+    h1 {
+      margin-bottom: 0;
+    }
+    &-cover {
+      width: 100%;
+      height: 90rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include from("desktop") {
+      margin: 6rem auto 6rem auto;
+    }
+    p {
+      @include from("desktop") {
+        width: 80%;
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgba($color: $color-primary, $alpha: 0.5);
+      }
+    }
+  }
+</style>
